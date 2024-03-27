@@ -161,6 +161,25 @@ export const xt = defineChain({
   },
 });
 
+export const injective = defineChain({
+  id: 2525,
+  name: "inEVM Mainnet",
+  network: "inEVM Mainnet",
+  nativeCurrency: {
+    decimals: 18,
+    name: "Injective",
+    symbol: "INJ",
+  },
+  rpcUrls: {
+    default: {
+      http: ["https://mainnet.rpc.inevm.com/http"],
+    },
+    public: {
+      http: ["https://mainnet.rpc.inevm.com/http"],
+    },
+  },
+});
+
 export const inscriptionChains = {
   eth: mainnet,
   bsc,
@@ -177,6 +196,7 @@ export const inscriptionChains = {
   // bevm,
   metis,
   xt,
+  injective,
   iotex,
   meter,
   klaytn,
