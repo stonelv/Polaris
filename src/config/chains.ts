@@ -178,6 +178,9 @@ export const injective = defineChain({
       http: ["https://mainnet.rpc.inevm.com/http"],
     },
   },
+  blockExplorers: {
+    default: { name: "Explorer", url: "https://explorer.inevm.com" },
+  },
 });
 
 export const inscriptionChains = {
